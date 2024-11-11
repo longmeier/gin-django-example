@@ -1,0 +1,30 @@
+port: 8000
+sentrydns: ''
+rabbitmqdns: ''
+his:
+  db_url:  'root:123456@tcp(127.0.0.1:3306)/test?charset=utf8mb4'
+
+jwt:
+  key:  '888=wt)k8&-r*_q8o%6p^mp8thow=#k8n8^m8m8je8oz8f8k*u'
+
+redis:
+  host: '127.0.0.1'
+  port: '6379'
+  db: '1'
+  pwd: ''
+
+logConfig:
+  log_file_name: "logs"
+  maxSize: 10240000
+  maxAge: 10  # 保留旧文件的最大天数
+  maxBackups: 1 # 保留旧文件的最大个数
+  compress: true # 是否压缩/归档旧文件
+
+log:
+  log_level: info
+  encoding:        #console           # json or console
+  log_file_name: "logs/root.log"
+  max_backups: 30
+  max_age: 7
+  max_size: 1024
+  compress: true
