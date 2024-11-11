@@ -1,0 +1,6 @@
+*/logs/*.log
+/logs/*.log
+logs/*.log
+*/http/*.log
+/http/*.log
+http/*.log

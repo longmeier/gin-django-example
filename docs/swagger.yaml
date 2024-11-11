@@ -1,0 +1,65 @@
+definitions:
+  handler.UserProFile:
+    properties:
+      id:
+        type: integer
+    type: object
+  model.User:
+    properties:
+      add_user_id:
+        type: integer
+      created:
+        type: string
+      enabled:
+        type: integer
+      id:
+        type: integer
+      last_login:
+        type: string
+      mobile:
+        description: 手机号
+        type: string
+      name:
+        description: 姓名
+        type: string
+      password:
+        type: string
+      salt:
+        type: string
+      update_at:
+        type: string
+      username:
+        description: 账户
+        type: string
+      visual:
+        type: integer
+    type: object
+info:
+  contact: {}
+paths:
+  /api/v1/user/info:
+    get:
+      consumes:
+      - application/json
+      description: This API returns the user's profile information
+      parameters:
+      - description: User ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handler.UserProFile'
+        "400":
+          description: Invalid request
+          schema:
+            $ref: '#/definitions/model.User'
+      summary: GetUserProfile
+      tags:
+      - user
+swagger: "2.0"

@@ -1,0 +1,22 @@
+.env
+logs/*
+http/*
+grpcbuf/proto/*
+grpcbuf/proto
+server
+main
+
+# IDE
+.vscode
+.idea
+
+# vendor
+vendor
+
+# debug
+__debug_bin
+dao
+go.mod
+go.sum
+config.yaml
+config.yaml2

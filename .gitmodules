@@ -1,0 +1,3 @@
+[submodule "freegrpc"]
+	path = freegrpc
+	url = git@gitee.com:bolin_1/freegrpc.git

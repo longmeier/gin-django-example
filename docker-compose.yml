@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  web-paycenter:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: paycenter:1.0
+    container_name: paycenter
+    ports:
+      - "9101:9101"
+    volumes:
+    - ./logs:/go/src/paycenter/logs
